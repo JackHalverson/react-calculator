@@ -1,0 +1,33 @@
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  width: 250px;
+  margin: 20px auto;
+  margin-top: 0;
+  background-color: #333;
+  border: 2px solid #555;
+  padding: 10px;
+  box-shadow: inset 2px 2px 5px #222, inset -2px -2px 5px #444;
+}
+
+.buttons-button {
+  background-color: #444;
+  border: 1px solid #555;
+  color: #ddd;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #222, -1px -1px 1px #666;
+  outline: none;
+}
+
+.buttons-button:active {
+  box-shadow: inset 1px 1px 1px #666, inset -1px -1px 1px #222;
+}
+
+.buttons-button:nth-child(17) {
+  grid-column: span 4;
+  background-color: #d9534f;
+  color: #fff;
+}
